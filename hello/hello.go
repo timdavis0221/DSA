@@ -5,11 +5,12 @@ import (
 )
 
 func main() {
-	dsa.TwoSumApproach3([]int{2, 3, 5, 7}, 9)
+	// dsa.TwoSumApproach3([]int{2, 3, 5, 7}, 9)
 	// dsa.RemoveDuplicate([]int{1, 1, 2})
-
-	// dsa.MaxProfit([]int{7, 1, 5, 3, 6, 4})
 
 	// dsa.AppendSlices()
 	// fmt.Println(dsa.ReturnNumOfArray([]int{3, 5, 6, 7}))
+
+	// dsa.MaxProfit([]int{7, 1, 5, 3, 6, 4})
+	dsa.MaxProfitSolution2([]int{7, 1, 5, 3, 6, 4})
 }
