@@ -12,5 +12,6 @@ func main() {
 	// fmt.Println(dsa.ReturnNumOfArray([]int{3, 5, 6, 7}))
 
 	// dsa.MaxProfit([]int{7, 1, 5, 3, 6, 4})
-	dsa.MaxProfitSolution2([]int{7, 1, 5, 3, 6, 4})
+	// dsa.MaxProfitSolution2([]int{7, 1, 5, 3, 6, 4})
+	dsa.BinarySearch([]int{-1, 0, 3, 5, 9, 12}, 9)
 }
