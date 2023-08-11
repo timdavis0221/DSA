@@ -68,6 +68,7 @@ func MaxProfitSolution3(prices []int) int {
 	dp[0][1] = 0
 
 	// Iterate the table.
+	// TODO: space complexity can be optimized.
 	for i := 1; i < length; i++ {
 		dp[i][0] = max(dp[i-1][0], -prices[i])
 		dp[i][1] = max(dp[i-1][1], prices[i]+dp[i-1][0])
