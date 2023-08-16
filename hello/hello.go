@@ -13,6 +13,7 @@ func main() {
 
 	// dsa.MaxProfit([]int{7, 1, 5, 3, 6, 4})
 	// dsa.MaxProfitSolution2([]int{7, 1, 5, 3, 6, 4})
-	dsa.MaxProfitSolution3([]int{7, 1, 5, 3, 6, 4})
+	// dsa.MaxProfitSolution3([]int{7, 1, 5, 3, 6, 4})
 	// dsa.BinarySearch([]int{-1, 0, 3, 5, 9, 12}, 9)
+	dsa.SortedSquares([]int{-4, -1, 0, 3, 10})
 }
