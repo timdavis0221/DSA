@@ -17,5 +17,6 @@ func main() {
 	// dsa.BinarySearch([]int{-1, 0, 3, 5, 9, 12}, 9)
 	// dsa.SortedSquares([]int{-4, -1, 0, 3, 10})
 	// dsa.SortedSquaresSolution2([]int{-4, -1, 0, 3, 10})
-	dsa.MinSubArrayLen([]int{1, 1, 1}, 4)
+	// dsa.MinSubArrayLen([]int{1, 1, 1}, 4)
+	dsa.GenerateMatrix(3)
 }
