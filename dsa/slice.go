@@ -32,7 +32,7 @@ func AppendSlices() {
 	fmt.Printf("append 8th element in newNums2: %v, addr: %p, len: %d, cap: %d, self addr: %p\n", newNums2, &newNums2[0], len(newNums2), cap(newNums2), &newNums2)
 	fmt.Printf("newNums: %v, addr: %p, len: %d, cap: %d, self addr: %p\n\n", newNums, &newNums[0], len(newNums), cap(newNums), &newNums)
 
-	fmt.Println("Allocate independant array to each slice")
+	fmt.Println("Allocate independent array to each slice")
 	slice1 := make([]int, 0)
 	slice1 = append(slice1, 1)
 	slice1 = append(slice1, 2)

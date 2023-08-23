@@ -37,7 +37,7 @@ func TestMinSubArrayLen(t *testing.T) {
 		}, {
 			name: "TestMinSubArrayLen_Solution1_Example4",
 			args: args{
-				nums:   []int{5,1,3,5,10,7,4,9,2,8},
+				nums:   []int{5, 1, 3, 5, 10, 7, 4, 9, 2, 8},
 				target: 15,
 			},
 			want: 2,

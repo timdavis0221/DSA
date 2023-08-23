@@ -12,7 +12,7 @@ func BinarySearch(nums []int, target int) int {
 	// It's necessary to calculate when start index = end index.
 	for startIndex <= endIndex {
 		midIndex := (startIndex + endIndex) / 2
-		// Return target's index or shrink the given array in each interation.
+		// Return target's index or shrink the given array in each iteration.
 		if nums[midIndex] > target {
 			endIndex = midIndex - 1
 		} else if nums[midIndex] < target {

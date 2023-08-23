@@ -41,7 +41,7 @@ func MaxProfitSolution2(prices []int) int {
 	return maxProfit
 }
 
-// MaxProfitSolution3 finds the maximun profit by Dynamic Programming (Tabulation approach)
+// MaxProfitSolution3 finds the maximum profit by Dynamic Programming (Tabulation approach)
 // from the given prices array.
 func MaxProfitSolution3(prices []int) int {
 	length := len(prices)
@@ -57,11 +57,11 @@ func MaxProfitSolution3(prices []int) int {
 	// or amount of money (dp[0][0]), another possible profit is 0 minus the i-th day price.
 
 	// The formula of dp[i][1] = max(dp[i-1][1], prices[i]+dp[i-1][0]).
-	// dp[i-1][1] assumes you alraedy sold the stock before i-th day.
+	// dp[i-1][1] assumes you already sold the stock before i-th day.
 	// You could sell the stock on the i-th day as well, so the profit can be
 	// prices[i] plus your original money (dp[i-1][0]).
 
-	// Initilization of dp[0][0] and dp[0][1].
+	// Initialization of dp[0][0] and dp[0][1].
 	// dp[0][0]: the i-th day that you buy (hold) the stock.
 	// dp[0][1]: the i-th day that you sell (don't hold) the stock.
 	dp[0][0] = -prices[0] // dp[0][0] - prices[0]

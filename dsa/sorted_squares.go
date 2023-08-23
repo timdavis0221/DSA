@@ -66,7 +66,7 @@ func quickSort(nums []int, start, end int) []int {
 			}
 		}
 	}
-	// Combine the partions.
+	// Combine the partitions.
 	resultSlice := make([]int, 0)
 	resultSlice = append(resultSlice, quickSort(less, 0, len(less)-1)...)
 	resultSlice = append(resultSlice, mid...)
