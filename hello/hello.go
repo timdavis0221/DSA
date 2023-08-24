@@ -19,5 +19,6 @@ func main() {
 	// dsa.SortedSquaresSolution2([]int{-4, -1, 0, 3, 10})
 	// dsa.MinSubArrayLen([]int{1, 1, 1}, 4)
 	// dsa.GenerateMatrix(3)
-	dsa.ProductExceptSelf([]int{1, 2, 3, 4})
+	// dsa.ProductExceptSelf([]int{1, 2, 3, 4})
+	dsa.ProductExceptSelfApproach2([]int{1, 2, 3, 4})
 }

@@ -35,3 +35,28 @@ func ProductExceptSelf(nums []int) []int {
 	}
 	return res
 }
+
+// ProductExceptSelfApproach2 makes space optimization in O(1).
+//
+// Note: this is follow up challenge.
+func ProductExceptSelfApproach2(nums []int) []int {
+	len := len(nums)
+	res := make([]int, len)
+	// Replace the slice of left product with result slice to store all the elements in left product.
+	// Also, remove extra slice of right product.
+	res[0] = 1
+	for index := range nums[1:len] {
+		index++
+		res[index] = nums[index-1] * res[index-1]
+	}
+	// The right pointer is for handling the current value of right product, move from right to left
+	// for updating the result slice.
+	rightPointer := 1
+	for index := len - 1; index >= 0; index-- {
+		// This formula is equal to leftProducts[i] * rightProducts[i] above.
+		res[index] = res[index] * rightPointer
+		// The next (previous) value of right product.
+		rightPointer = rightPointer * nums[index]
+	}
+	return res
+}
