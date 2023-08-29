@@ -1,6 +1,10 @@
 package dsa
 
-import "fmt"
+import (
+	"fmt"
+
+	"personalfile.app/yao/project_go/lib"
+)
 
 // MaxProfit returns a max profit from a given array.
 func MaxProfit(prices []int) int {
@@ -70,15 +74,8 @@ func MaxProfitSolution3(prices []int) int {
 	// Iterate the table.
 	// TODO: space complexity can be optimized.
 	for i := 1; i < length; i++ {
-		dp[i][0] = max(dp[i-1][0], -prices[i])
-		dp[i][1] = max(dp[i-1][1], prices[i]+dp[i-1][0])
+		dp[i][0] = lib.Max(dp[i-1][0], -prices[i])
+		dp[i][1] = lib.Max(dp[i-1][1], prices[i]+dp[i-1][0])
 	}
 	return dp[length-1][1]
-}
-
-func max(v1, v2 int) int {
-	if v1 > v2 {
-		return v1
-	}
-	return v2
 }
