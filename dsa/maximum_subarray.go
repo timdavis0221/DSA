@@ -4,24 +4,18 @@ import (
 	"personalfile.app/yao/project_go/lib"
 )
 
-// MaximumSubarray finds the subarray with the largest sum and returns its sum.
+// MaximumSubarray finds the subarray with the largest sum and returns its sum
+// with Kadane's Algorithm.
 func MaximumSubarray(nums []int) int {
 	maxSum := nums[0]
 	currentSum := maxSum
 	for _, num := range nums[1:] {
+		// Add up all elements until current element to gain the current sum.
 		currentSum += num
-		maxSum = lib.Max(maxSum, currentSum)
-		// If current number is greater than current sum and maximum sum, drop the
-		// previous sum of subarray and set current number as maximum sum.
-		// Also, use current number as the new sum of subarray.
-		if num > currentSum && num > maxSum {
-			maxSum = num
-			currentSum = maxSum
-		}
-		// TODO: wrong answer in this case [3,-2,-3,-3,1,3,0].
-		if currentSum < 0 && num < currentSum {
-			currentSum = 0
-		}
+		// The key point is we have to make sure that the current sum here is guaranteed to
+		// the maximum sum for now, it can be zero or a negative number.
+		currentSum = lib.Max(currentSum, num)
+		maxSum = lib.Max(currentSum, maxSum)
 	}
 	return maxSum
 }

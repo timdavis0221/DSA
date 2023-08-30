@@ -35,6 +35,12 @@ func TestMaximumSubarray(t *testing.T) {
 				nums: []int{8, -19, 5, -4, 20},
 			},
 			want: 21,
+		}, {
+			name: "Maximum_Subarray_Test5",
+			args: args{
+				nums: []int{3, -2, -3, -3, 1, 3, 0},
+			},
+			want: 4,
 		},
 	}
 	for _, tt := range tests {
