@@ -21,5 +21,6 @@ func main() {
 	// dsa.GenerateMatrix(3)
 	// dsa.ProductExceptSelf([]int{1, 2, 3, 4})
 	// dsa.ProductExceptSelfApproach2([]int{1, 2, 3, 4})
-	dsa.MaximumSubarray([]int{-2, 2, 5, -11, 6})
+	// dsa.MaximumSubarray([]int{-2, 2, 5, -11, 6})
+	dsa.MaximumSubarrayApproach2([]int{-2, 2, 5, -11, 6})
 }
