@@ -12,9 +12,8 @@ func TestRemoveElement(t *testing.T) {
 		args args
 		want int
 	}{
-		// TODO: Add test cases.
 		{
-			name: "RE",
+			name: "Remove_Element_Test1",
 			args: args{
 				nums: []int{0, 1, 2, 2, 3, 0, 4, 2},
 				val:  2,
