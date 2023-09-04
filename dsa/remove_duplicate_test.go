@@ -11,13 +11,18 @@ func TestRemoveDuplicate(t *testing.T) {
 		args args
 		want int
 	}{
-		// TODO: Add test cases.
 		{
-			name: "RD",
+			name: "Remove_Duplicate_Test1",
 			args: args{
-				nums: []int{0, 0, 1, 2, 2, 3},
+				nums: []int{1, 1, 2},
 			},
-			want: 4,
+			want: 2,
+		}, {
+			name: "Remove_Duplicate_Test2",
+			args: args{
+				nums: []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4},
+			},
+			want: 5,
 		},
 	}
 	for _, tt := range tests {
