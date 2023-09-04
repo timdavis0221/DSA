@@ -15,14 +15,20 @@ func TestTwoSumApproach3(t *testing.T) {
 		args args
 		want []int
 	}{
-		// TODO: Add test cases.
 		{
-			name: "TestTwoSumApproach3",
+			name: "Two_Sum_Approach3_Test1",
 			args: args{
-				nums:   []int{2, 3, 5, 7},
+				nums:   []int{2, 7, 11, 15},
 				target: 9,
 			},
-			want: []int{0, 3},
+			want: []int{0, 1},
+		}, {
+			name: "Two_Sum_Approach3_Test2",
+			args: args{
+				nums:   []int{3, 2, 4},
+				target: 6,
+			},
+			want: []int{1, 2},
 		},
 	}
 	for _, tt := range tests {

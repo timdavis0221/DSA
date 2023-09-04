@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	// dsa.TwoSumApproach3([]int{2, 3, 5, 7}, 9)
-	dsa.RemoveDuplicate([]int{1, 1, 2})
+	dsa.TwoSumApproach3([]int{2, 3, 5, 7}, 9)
+	// dsa.RemoveDuplicate([]int{1, 1, 2})
 	// dsa.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
 
 	// dsa.AppendSlices()
