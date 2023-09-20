@@ -31,5 +31,6 @@ func main() {
 	 * Topic: String
 	 */
 	// dsa.ReverseString([]byte{0x48, 0x65, 0x6c, 0x6c, 0x6f})
-	dsa.ReverseString2("hello", 2)
+	// dsa.ReverseString2("hello", 2)
+	dsa.ValidAnagram("race", "care")
 }
