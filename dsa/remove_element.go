@@ -14,6 +14,7 @@ func RemoveElement(nums []int, val int) int {
 	// Use index of loop as fast pointer to iterate all elements.
 	for index := range nums {
 		if nums[index] != val {
+			// Check the final elements of slice.
 			nums[count] = nums[index]
 			count++
 		}
