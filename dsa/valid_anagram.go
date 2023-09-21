@@ -40,3 +40,27 @@ func areMapsEqual(map1, map2 map[rune]int) bool {
 	}
 	return true
 }
+
+// ValidAnagramApproach2 makes the improvements by using only one slice instead of using two hash tables.
+func ValidAnagramApproach2(s, t string) bool {
+	chars := make([]int, 26)
+	for _, v := range s {
+		// Use the difference of ascii dec number to represent each of the 26 lowercase English letters.
+		// For example, 0  = 'a' - 'a' (97-97), 1 = 'b' - 'a' (98-97), etc.
+		i := v - 'a'
+		// Incrementing the number when the relevant letter appears.
+		chars[i]++
+	}
+	for _, v := range t {
+		i := v - 'a'
+		// Decrementing the number when the relevant letter appears again.
+		chars[i]--
+	}
+	for _, v := range chars {
+		// Expect all the numbers would be zero if t string is anagram of s string.
+		if v != 0 {
+			return false
+		}
+	}
+	return true
+}
