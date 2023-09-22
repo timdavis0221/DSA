@@ -64,3 +64,23 @@ func ValidAnagramApproach2(s, t string) bool {
 	}
 	return true
 }
+
+// ValidAnagramApproach3 uses only one hash table to handle the inputs contain Unicode characters.
+func ValidAnagramApproach3(s, t string) bool {
+	sMap := make(map[rune]int, len([]byte(s)))
+	// Increase the number for the appearance of the lowercase English letters as frequency of appearance.
+	for _, v := range s {
+		sMap[v]++
+	}
+	// Decrease the number for the appearance of the lowercase English letters.
+	for _, v := range t {
+		sMap[v]--
+	}
+	// Expect all the values in map would be zero If t is an anagram of s.
+	for _, v := range sMap {
+		if v != 0 {
+			return false
+		}
+	}
+	return true
+}

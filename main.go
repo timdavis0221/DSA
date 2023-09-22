@@ -1,7 +1,7 @@
 package main
 
 import (
-	"personalfile.app/yao/project_go/concurrency"
+	"personalfile.app/yao/project_go/dsa"
 )
 
 func main() {
@@ -34,5 +34,6 @@ func main() {
 	// dsa.ReverseString2("hello", 2)
 	// dsa.ValidAnagram("race", "care")
 	// dsa.ValidAnagramApproach2("race", "care")
-	concurrency.Goroutine()
+	// concurrency.Goroutine()
+	dsa.ValidAnagramApproach3("race", "care")
 }
