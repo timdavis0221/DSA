@@ -35,5 +35,6 @@ func main() {
 	// dsa.ValidAnagram("race", "care")
 	// dsa.ValidAnagramApproach2("race", "care")
 	// concurrency.Goroutine()
-	dsa.ValidAnagramApproach3("race", "care")
+	// dsa.ValidAnagramApproach3("race", "care")
+	dsa.ValidPalindrome("!043XjqjX043!")
 }
