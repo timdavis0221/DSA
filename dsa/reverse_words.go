@@ -31,7 +31,7 @@ func ReverseWords(s string) string {
 	return resultStr
 }
 
-// ReverseWords uses in-place algorithm to reverse words for consuming less space purpose.
+// ReverseWords2 uses in-place algorithm to reverse words for consuming less space purpose.
 // O(1) if string is mutable, otherwise O(n).
 func ReverseWords2(s string) string {
 	// For modifying immutable string in-place.
