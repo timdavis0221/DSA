@@ -1,6 +1,8 @@
 package dsa
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestRepeatedSubstringPattern(t *testing.T) {
 	type args struct {
@@ -29,6 +31,38 @@ func TestRepeatedSubstringPattern(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := RepeatedSubstringPattern(tt.args.s); got != tt.want {
 				t.Errorf("RepeatedSubstringPattern() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestRepeatedSubstringPatternApproach2(t *testing.T) {
+	type args struct {
+		s string
+	}
+	tests := []struct {
+		name string
+		args args
+		want bool
+	}{
+		{
+			name: "RepeatedSubstringPatternApproach2_Test1",
+			args: args{
+				s: "aabbccaabbcc",
+			},
+			want: true,
+		}, {
+			name: "RepeatedSubstringPatternApproach2_Test2",
+			args: args{
+				s: "abaa",
+			},
+			want: false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := RepeatedSubstringPatternApproach2(tt.args.s); got != tt.want {
+				t.Errorf("RepeatedSubstringPatternApproach2() = %v, want %v", got, tt.want)
 			}
 		})
 	}

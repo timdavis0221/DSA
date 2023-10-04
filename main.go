@@ -39,5 +39,6 @@ func main() {
 	// dsa.ValidPalindrome("!043XjqjX043!")
 	// dsa.ReverseWords("the    y blue is sky")
 	// dsa.ReverseWords2("     the y blue is sky")
-	dsa.RepeatedSubstringPattern("aba")
+	// dsa.RepeatedSubstringPattern("aba")
+	dsa.RepeatedSubstringPatternApproach2("aabbccaabbcc")
 }
