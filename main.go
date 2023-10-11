@@ -40,5 +40,6 @@ func main() {
 	// dsa.ReverseWords("the    y blue is sky")
 	// dsa.ReverseWords2("     the y blue is sky")
 	// dsa.RepeatedSubstringPattern("aba")
-	dsa.RepeatedSubstringPatternApproach2("aabbccaabbcc")
+	// dsa.RepeatedSubstringPatternApproach2("aabbccaabbcc")
+	dsa.StrStr("sadbutsad", "sad")
 }
