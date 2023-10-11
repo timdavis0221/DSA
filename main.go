@@ -1,45 +1,56 @@
 package main
 
 import (
-	"personalfile.app/yao/project_go/dsa"
+	"personalfile.app/yao/project_go/dsa/str"
 )
 
 func main() {
 	// dsa.AppendSlices()
 	// fmt.Println(dsa.ReturnNumOfArray([]int{3, 5, 6, 7}))
+	// concurrency.Goroutine()
 
 	/*
 	 * Topic: Array
 	 */
-	// dsa.TwoSumApproach3([]int{2, 3, 5, 7}, 9)
-	// dsa.RemoveDuplicate([]int{1, 1, 2})
-	// dsa.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
-	// dsa.MaxProfit([]int{7, 1, 5, 3, 6, 4})
-	// dsa.MaxProfitSolution2([]int{7, 1, 5, 3, 6, 4})
-	// dsa.MaxProfitSolution3([]int{7, 1, 5, 3, 6, 4})
-	// dsa.BinarySearch([]int{-1, 0, 3, 5, 9, 12}, 9)
-	// dsa.SortedSquares([]int{-4, -1, 0, 3, 10})
-	// dsa.SortedSquaresSolution2([]int{-4, -1, 0, 3, 10})
-	// dsa.MinSubArrayLen([]int{1, 1, 1}, 4)
-	// dsa.GenerateMatrix(3)
-	// dsa.ProductExceptSelf([]int{1, 2, 3, 4})
-	// dsa.ProductExceptSelfApproach2([]int{1, 2, 3, 4})
-	// dsa.MaximumSubarray([]int{-2, 2, 5, -11, 6})
-	// dsa.MaximumSubarrayApproach2([]int{-2, 2, 5, -11, 6})
+
+	// array.RemoveDuplicate([]int{1, 1, 2})
+	// array.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
+	// array.BinarySearch([]int{-1, 0, 3, 5, 9, 12}, 9)
+	// array.MaxProfit([]int{7, 1, 5, 3, 6, 4})
+	// array.MaxProfitSolution2([]int{7, 1, 5, 3, 6, 4})
+	// array.MaxProfitSolution3([]int{7, 1, 5, 3, 6, 4})
+	// array.SortedSquares([]int{-4, -1, 0, 3, 10})
+	// array.MinSubArrayLen([]int{1, 1, 1}, 4)
+	// array.GenerateMatrix(3)
+	// array.ProductExceptSelf([]int{1, 2, 3, 4})
+	// array.ProductExceptSelfApproach2([]int{1, 2, 3, 4})
+	// array.MaximumSubarray([]int{-2, 2, 5, -11, 6})
+	// array.MaximumSubarrayApproach2([]int{-2, 2, 5, -11, 6})
+
+	/*
+	 * Topic: Sorting
+	 */
+
+	// sorting.SortedSquares([]int{-4, -1, 0, 3, 10})
 
 	/*
 	 * Topic: String
 	 */
-	// dsa.ReverseString([]byte{0x48, 0x65, 0x6c, 0x6c, 0x6f})
-	// dsa.ReverseString2("hello", 2)
-	// dsa.ValidAnagram("race", "care")
-	// dsa.ValidAnagramApproach2("race", "care")
-	// concurrency.Goroutine()
-	// dsa.ValidAnagramApproach3("race", "care")
-	// dsa.ValidPalindrome("!043XjqjX043!")
-	// dsa.ReverseWords("the    y blue is sky")
-	// dsa.ReverseWords2("     the y blue is sky")
-	// dsa.RepeatedSubstringPattern("aba")
-	// dsa.RepeatedSubstringPatternApproach2("aabbccaabbcc")
-	dsa.StrStr("sadbutsad", "sad")
+
+	// str.ReverseString([]byte{0x48, 0x65, 0x6c, 0x6c, 0x6f})
+	// str.ReverseString2("hello", 2)
+	// str.ValidAnagram("race", "care")
+	// str.ValidAnagramApproach2("race", "care")
+	// str.ValidAnagramApproach3("race", "care")
+	// str.ValidPalindrome("!043XjqjX043!")
+	// str.ReverseWords("the    y blue is sky")
+	// str.ReverseWords2("     the y blue is sky")
+	// str.RepeatedSubstringPattern("aba")
+	// str.RepeatedSubstringPatternApproach2("aabbccaabbcc")
+	str.StrStr("sadbutsad", "sad")
+
+	/*
+	 * Topic: Hash Table
+	 */
+	// hashtable.TwoSumApproach3([]int{2, 3, 5, 7}, 9)
 }
