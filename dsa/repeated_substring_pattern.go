@@ -40,9 +40,8 @@ func prefixTable(s string, len int) []int {
 	// Index i is the faster pointer used to iterate the original string and compare the current character
 	// with base value. Also, it used to store the current length of LPS if LPS occurs.
 	for i := 1; i < len; i++ {
-		// There's not LPS occurs, grab the previous length of LPS as current length of LPS (zero).
+		// There's not LPS occurs, grab the previous length of LPS as current length of LPS.
 		for j > 0 && s[j] != s[i] {
-			// Set as zero directly?
 			j = lps[j-1]
 		}
 		// There is a LPS occurs, increment j as the current length of LPS.
