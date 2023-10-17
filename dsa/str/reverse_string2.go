@@ -16,12 +16,13 @@ func ReverseString2(s string, k int) string {
 	// Use index i as the start pointer.
 	// Reverse the string for every 2k characters.
 	for i := 0; i < strLen; i += (2 * k) {
-		// Reverse the first k characters (k <= length) if the range of the string starting from the
-		// start pointer and stopping at the end pointer is less than or equal to the length of string.
+		// Reverse the first k characters and leave the other original if the range of the string
+		// starting from the start pointer and stopping at the end pointer is less than or equal
+		// to the length of string. (less than 2k but greater than or equal to k)
 		if (i + end) <= strLen {
 			ReverseStringApproach2(strByteSlice[i : i+end])
 		} else {
-			// Reverse all of the characters. (k > length)
+			// Reverse all of the characters. (the length of string is fewer than k)
 			ReverseStringApproach2(strByteSlice[i:])
 		}
 	}
