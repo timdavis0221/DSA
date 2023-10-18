@@ -42,12 +42,12 @@ func main() {
 	// str.ValidAnagram("race", "care")
 	// str.ValidAnagramApproach2("race", "care")
 	// str.ValidAnagramApproach3("race", "care")
-	// str.ValidPalindrome("!043XjqjX043!")
+	str.ValidPalindrome("!043XjqjX043!")
 	// str.ReverseWords("the    y blue is sky")
 	// str.ReverseWords2("     the y blue is sky")
 	// str.RepeatedSubstringPattern("aba")
 	// str.RepeatedSubstringPatternApproach2("aabbccaabbcc")
-	str.StrStr("sadbutsad", "sad")
+	// str.StrStr("sadbutsad", "sad")
 
 	/*
 	 * Topic: Hash Table
