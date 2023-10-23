@@ -9,7 +9,8 @@ package array
 func BinarySearch(nums []int, target int) int {
 	startIndex := 0
 	endIndex := len(nums) - 1
-	// It's necessary to calculate when start index = end index.
+	// It's necessary to calculate the middle index when start index is equal to end index
+	// because it might be the answer in final iteration.
 	for startIndex <= endIndex {
 		midIndex := (startIndex + endIndex) / 2
 		// Return target's index or shrink the given array in each iteration.
