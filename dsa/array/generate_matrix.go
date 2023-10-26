@@ -10,10 +10,9 @@ func GenerateMatrix(n int) [][]int {
 	var rowBegin, rowEnd, colBegin, colEnd = 0, n - 1, 0, n - 1
 	var counter = 1
 
-	var matrix [][]int
-	for i := 0; i < n; i++ {
-		row := make([]int, n)
-		matrix = append(matrix, row)
+	matrix := make([][]int, n)
+	for i := range matrix {
+		matrix[i] = make([]int, n)
 	}
 
 	for rowBegin <= rowEnd && colBegin <= colEnd {
