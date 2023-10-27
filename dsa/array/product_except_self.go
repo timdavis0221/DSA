@@ -49,14 +49,14 @@ func ProductExceptSelfApproach2(nums []int) []int {
 		index++
 		res[index] = nums[index-1] * res[index-1]
 	}
-	// The right pointer is for handling the current value of right product, move from right to left
+	// The suffix stores the current value of suffix, move from right to left
 	// for updating the result slice.
-	rightPointer := 1
+	suffix := 1
 	for index := len - 1; index >= 0; index-- {
 		// This formula is equal to leftProducts[i] * rightProducts[i] above.
-		res[index] = res[index] * rightPointer
+		res[index] = res[index] * suffix
 		// The next (previous) value of right product.
-		rightPointer = rightPointer * nums[index]
+		suffix *= nums[index]
 	}
 	return res
 }
