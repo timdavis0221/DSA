@@ -1,8 +1,6 @@
 package main
 
-import (
-	"personalfile.app/yao/project_go/dsa/str"
-)
+import "personalfile.app/yao/project_go/dsa/searching"
 
 func main() {
 	// dsa.AppendSlices()
@@ -12,7 +10,6 @@ func main() {
 	/*
 	 * Topic: Array
 	 */
-
 	// array.RemoveDuplicate([]int{1, 1, 2})
 	// array.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
 	// array.BinarySearch([]int{-1, 0, 3, 5, 9, 12}, 9)
@@ -30,19 +27,22 @@ func main() {
 	/*
 	 * Topic: Sorting
 	 */
-
 	// sorting.SortedSquares([]int{-4, -1, 0, 3, 10})
+
+	/*
+	 * Topic: Searching
+	 */
+	searching.SearchInRotatedSortedArray([]int{4, 5, 6, 7, 0, 1, 2}, 0)
 
 	/*
 	 * Topic: String
 	 */
-
 	// str.ReverseString([]byte{0x48, 0x65, 0x6c, 0x6c, 0x6f})
 	// str.ReverseString2("hello", 2)
 	// str.ValidAnagram("race", "care")
 	// str.ValidAnagramApproach2("race", "care")
 	// str.ValidAnagramApproach3("race", "care")
-	str.ValidPalindrome("!043XjqjX043!")
+	// str.ValidPalindrome("!043XjqjX043!")
 	// str.ReverseWords("the    y blue is sky")
 	// str.ReverseWords2("     the y blue is sky")
 	// str.RepeatedSubstringPattern("aba")
