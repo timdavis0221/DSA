@@ -1,6 +1,8 @@
 package main
 
-import "personalfile.app/yao/project_go/dsa/searching"
+import (
+	"personalfile.app/yao/project_go/dsa/linkedlist"
+)
 
 func main() {
 	// dsa.AppendSlices()
@@ -32,7 +34,7 @@ func main() {
 	/*
 	 * Topic: Searching
 	 */
-	searching.SearchInRotatedSortedArray([]int{4, 5, 6, 7, 0, 1, 2}, 0)
+	// searching.SearchInRotatedSortedArray([]int{4, 5, 6, 7, 0, 1, 2}, 0)
 
 	/*
 	 * Topic: String
@@ -48,6 +50,12 @@ func main() {
 	// str.RepeatedSubstringPattern("aba")
 	// str.RepeatedSubstringPatternApproach2("aabbccaabbcc")
 	// str.StrStr("sadbutsad", "sad")
+
+	/*
+	 * Topic: Linked List
+	 */
+	head := linkedlist.CreateLinkedList([]int{1, 2, 6, 3, 4, 5, 6})
+	linkedlist.PrintList(linkedlist.RemoveElements(head, 6))
 
 	/*
 	 * Topic: Hash Table
