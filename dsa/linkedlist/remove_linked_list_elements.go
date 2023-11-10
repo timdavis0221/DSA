@@ -47,6 +47,7 @@ func CreateLinkedList(values []int) *ListNode {
 		current.next = &ListNode{val: val}
 		current = current.next
 	}
+	fmt.Print("Created Linked List: ")
 	PrintList(dummyHead.next)
 	fmt.Println()
 	return dummyHead.next
