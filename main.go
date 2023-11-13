@@ -58,7 +58,9 @@ func main() {
 	// linkedlist.PrintList(linkedlist.RemoveElements(head, 6))
 	head := linkedlist.CreateLinkedList([]int{1, 2, 3, 4, 5})
 	// linkedlist.ReverseLinkedList(head)
-	linkedlist.ReverseLinkedListRecursively(head)
+	// linkedlist.ReverseLinkedListRecursively(head)
+	linkedlist.HasCycle(head)
+	linkedlist.HasCycleApproach2(head)
 
 	/*
 	 * Topic: Hash Table
