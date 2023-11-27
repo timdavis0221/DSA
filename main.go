@@ -1,7 +1,7 @@
 package main
 
 import (
-	"personalfile.app/yao/project_go/dsa/linkedlist"
+	"personalfile.app/yao/project_go/dsa/queue"
 )
 
 func main() {
@@ -56,14 +56,21 @@ func main() {
 	 */
 	// head := linkedlist.CreateLinkedList([]int{1, 2, 6, 3, 4, 5, 6})
 	// linkedlist.PrintList(linkedlist.RemoveElements(head, 6))
-	head := linkedlist.CreateLinkedList([]int{1, 2, 3, 4, 5})
+
+	// head := linkedlist.CreateLinkedList([]int{1, 2, 3, 4, 5})
 	// linkedlist.ReverseLinkedList(head)
 	// linkedlist.ReverseLinkedListRecursively(head)
-	linkedlist.HasCycle(head)
-	linkedlist.HasCycleApproach2(head)
+
+	// linkedlist.HasCycle(head)
+	// linkedlist.HasCycleApproach2(head)
 
 	/*
 	 * Topic: Hash Table
 	 */
 	// hashtable.TwoSumApproach3([]int{2, 3, 5, 7}, 9)
+
+	/*
+	 * Topic: Queue
+	 */
+	queue.ImplementStackUsingQueues()
 }
