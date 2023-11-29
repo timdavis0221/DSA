@@ -1,7 +1,7 @@
 package main
 
 import (
-	"personalfile.app/yao/project_go/dsa/queue"
+	"personalfile.app/yao/project_go/dsa/stack"
 )
 
 func main() {
@@ -72,5 +72,10 @@ func main() {
 	/*
 	 * Topic: Queue
 	 */
-	queue.ImplementStackUsingQueues()
+	// queue.ImplementStackUsingQueues()
+
+	/*
+	 * Topic: Stack
+	 */
+	stack.ImplementQueueUsingStacks()
 }
