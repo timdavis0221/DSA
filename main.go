@@ -1,7 +1,9 @@
 package main
 
 import (
-	"personalfile.app/yao/project_go/dsa/stack"
+	"fmt"
+
+	"personalfile.app/yao/project_go/dsa/binaryops"
 )
 
 func main() {
@@ -77,5 +79,11 @@ func main() {
 	/*
 	 * Topic: Stack
 	 */
-	stack.ImplementQueueUsingStacks()
+	// stack.ImplementQueueUsingStacks()
+
+	/*
+	 * Topic: Binary
+	 */
+	ans := binaryops.BinaryGap(22)
+	fmt.Println(ans)
 }
