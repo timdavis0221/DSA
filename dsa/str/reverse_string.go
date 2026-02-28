@@ -28,3 +28,12 @@ func ReverseStringApproach2(s []byte) {
 		end--
 	}
 }
+
+// ReverseStringApproach3 makes the less code and more efficient by using the current length of the string to swap the characters.
+func ReverseStringApproach3(s []byte) {
+	currentLen := len(s)
+	for i := 0; i < currentLen; i++ {
+		s[i], s[currentLen-1] = s[currentLen-1], s[i]
+		currentLen--
+	}
+}

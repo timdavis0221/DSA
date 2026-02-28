@@ -56,3 +56,21 @@ func TestReverseStringApproach2(t *testing.T) {
 		})
 	}
 }
+
+func TestReverseStringApproach3(t *testing.T) {
+	tests := []struct {
+		name string // description of this test case
+		// Named input parameters for target function.
+		s []byte
+	}{
+		{
+			name: "ReverseString_Approach3_Test1",
+			s:    inputStringToBytes([]string{"h", "e", "l", "l", "o"}),
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			ReverseStringApproach3(tt.s)
+		})
+	}
+}
